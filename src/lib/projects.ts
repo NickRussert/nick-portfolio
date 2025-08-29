@@ -43,7 +43,7 @@ export const projects: Project[] = [
     ],
     tech: ["Python", "TensorFlow/Keras", "Pandas", "NumPy", "Matplotlib"],
     links: [
-      { label: "GitHub", href: "#" }, // TODO: replace with repo link
+      { label: "GitHub", href: "https://github.com/NickRussert/CryptoPricePrediction" }, // TODO: replace with repo link
     ],
     paper: { label: "Paper (PDF)", href: "/papers/crypto-lstm.pdf" },
     badge: "Time Series",
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     ],
     tech: ["Python", "OpenCV", "scikit-learn", "TensorFlow/Keras"],
     links: [
-      { label: "GitHub", href: "#" }, // TODO: replace with repo link
+      { label: "GitHub", href: "https://github.com/NickRussert/CNN-SVM-ASL" }, // TODO: replace with repo link
     ],
     paper: { label: "Paper (PDF)", href: "/papers/asl-recognition.pdf" },
     badge: "Deep Learning",
@@ -71,8 +71,8 @@ export const about = {
   tagline: "Software Engineer · AI & Machine Learning",
   blurb:
     "I graduated Magna Cum Laude from San Diego State University (Computer Science). I focus on computer vision, predictive modeling, and data science—building systems that are both accurate and useful. I enjoy turning research ideas into real, production‑ready software.",
-  email: "your.email@example.com", // TODO: update
+  email: "Russertnick@gmail.com",
   github: "https://github.com/NickRussert",
-  linkedin: "https://www.linkedin.com/in/your-handle", // TODO: update
-  location: "San Diego, CA",
+  linkedin: "https://www.linkedin.com/in/nick-russert-08372426a/", 
+  location: "North Bergen, NJ",
 };

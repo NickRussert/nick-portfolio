@@ -1,15 +1,12 @@
-@import "tailwindcss";
+/* ✅ Tailwind v3 directives (not @import) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* Light/Dark CSS vars */
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,10 +16,12 @@
   }
 }
 
+/* Base body styles (Geist font var will work if you add it in layout; falls back otherwise) */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 /* Better typography defaults */
@@ -30,10 +29,11 @@ body {
   :root { --radius: 1rem; }
 }
 
+/* Links inside prose blocks get underlines */
 .prose :where(a):not(:where([class~="not-prose"] *)) {
   text-decoration: underline;
 }
 
-.prose .lead { color: theme(colors.zinc.600); }
-.dark .prose .lead { color: theme(colors.zinc.300); }
-
+/* ✅ theme() calls need quotes in Tailwind v3 */
+.prose .lead { color: theme('colors.zinc.600'); }
+.dark .prose .lead { color: theme('colors.zinc.300'); }
